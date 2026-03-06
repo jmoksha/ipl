@@ -12,7 +12,7 @@ def get_db():
 @app.route("/")
 def home():
     import os
-return send_file(os.path.join(os.getcwd(),"app.html"))
+    return send_file(os.path.join(os.getcwd(),"app.html"))
 
 
 @app.route("/players")
