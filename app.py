@@ -11,7 +11,8 @@ def get_db():
 
 @app.route("/")
 def home():
-    return send_file("app.html")
+    import os
+return send_file(os.path.join(os.getcwd(),"app.html"))
 
 
 @app.route("/players")
